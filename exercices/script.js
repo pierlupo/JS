@@ -19,3 +19,7 @@ let sum = x + y;
 console.log(sum);
 let maSomme = `la somme de ${x} + ${y} est égale à  ${sum}`; // Post ES6
 console.log(maSomme);
+
+alert( `la somme de ${x} + ${y} est égale à ${sum}`);
+
+prompt(`la somme de ${x} + ${y} est égale à : `);
