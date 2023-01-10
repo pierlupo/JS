@@ -94,3 +94,21 @@
 
 //exercice5:
 
+let hypo, 
+    coteAdj1,
+    coteAdj2,
+    cote3,
+    affichage;
+    
+
+
+coteAdj1 =  Number(prompt(`Veuillez saisir une valeur pour un des côtés adjacents à l'angle : `));
+coteAdj2 =  Number(prompt(`Veuillez saisir une deuxième valeur pour l'autre côté adjacent à l'angle: `));
+//resultat = Math.pow((coteAdj1),2) + Math.pow((coteAdj2),2) + Math.pow((cote3),2) ;
+hypo = Math.sqrt((coteAdj1 * coteAdj1) + (coteAdj2 * coteAdj2)).toFixed(2);
+
+affichage = `la longueur de l'hypoténuse en fonction de la longueur des côtés adjacents à l'angle est égale à : ${hypo}`;
+
+console.log(affichage);
+alert(affichage);
+
