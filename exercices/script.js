@@ -9,3 +9,13 @@ let maPremiereSaisieTextuelle = `${toto} ${verbe} la ${lang} en JavaScript !`; /
 
 console.log(maPremiereSaisieTextuelle);
 
+//Exercice2 :
+
+let x = 5;
+let y = 10;
+
+let sum = x + y;
+
+console.log(sum);
+let maSomme = `la somme de ${x} + ${y} est égale à  ${sum}`; // Post ES6
+console.log(maSomme);
