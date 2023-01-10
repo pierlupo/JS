@@ -40,18 +40,57 @@
 
 //exercice3:
 
-let aire,
-    diametre, 
-    affichage,
-    perimetre;
+// let aire,
+//     diametre, 
+//     affichage,
+//     perimetre;
 
-const pi = Math.PI
+// const pi = Math.PI
 
-diametre =  Number(prompt(`Veuillez saisir un diametre : `));
-perimetre = diametre * pi;
-aire = pi * Math.pow((diametre/2),2);
+// diametre =  Number(prompt(`Veuillez saisir un diametre : `));
+// perimetre = diametre * pi;
+// aire = pi * Math.pow((diametre/2),2);
 
-affichage = `le périmètre du cercle est égale à : ${perimetre} et l'aire est égale à : ${aire}`;
+// affichage = `le périmètre du cercle est égale à : ${perimetre} et l'aire est égale à : ${aire}`;
 
-console.log(affichage);
-alert(affichage);
+// console.log(affichage);
+// alert(affichage);
+
+
+//exercice4:
+//Carré:
+// let aire, 
+//     cote,
+//     affichage,
+//     perimetre;
+
+
+// cote =  Number(prompt(`Veuillez saisir une valeur pour un côté : `));
+// perimetre = cote * 4;
+// aire = Math.pow((cote),2);
+
+// affichage = `le périmètre du carré est égale à : ${perimetre} et son aire est égale à : ${aire}`;
+
+// console.log(affichage);
+// alert(affichage);
+
+//Rectangle:
+// let aireRec, 
+//     largeur,
+//     longueur,
+//     affichageRec,
+//     perimetreRec;
+
+
+// largeur =  Number(prompt(`Veuillez saisir une valeur pour une largeur : `));
+// longueur =  Number(prompt(`Veuillez saisir une valeur pour une longeur : `));
+// perimetreRec = largeur * 2 + longueur * 2;
+// aireRec = largeur * longueur;
+
+// affichageRec = `le périmètre du rectangle est égale à : ${perimetreRec} et son aire est égale à : ${aireRec}`;
+
+// console.log(affichageRec);
+// alert(affichageRec);
+
+//exercice5:
+
