@@ -508,53 +508,29 @@ switch (cond) {
 
 //exercice 14:
 
-// let ppn, pgn, sum, affichage;
-// affichage = prompt("Veuillez entrer une note : ");
-// for(let i = affichage; i <= 3; i++){
-         
-//     affichage;
 
+// let ppn=20, pgn=0, sum = 0, nbNotes, affichage;
+
+// nbNotes = Number(prompt("Combien de notes allez vous saisir?"));
+
+// for(let i = 1; i <= nbNotes; i++) {
+//     let noteTmp = Number(prompt(`Merci de saisir la note n°${i} (sur 20) :`));
+
+//     sum += noteTmp;
+
+//     if(noteTmp > pgn) {
+//         pgn = noteTmp;
 //     }
-
-// if(i==1){
-
-//     pgn = Nbr_entrees;
-//     ppn = Nbr_entrees;
-
+//     if(noteTmp < ppn) {
+//        ppn = noteTmp 
+//     }
 // }
 
-// if(Nbr_entrees>pgn){
+// sum = Math.round(sum/nbNotes);
 
-//     pgn = Nbr_entrees
-// }
+// console.log("Ma note max est " + pgn);
+// console.log("Ma note min est " + ppn);
+// console.log("Ma moyenne est de " + sum);
 
-
-// if(Nbr_entrees<ppn){
-
-//     ppn = Nbr_entrees
-
-// }
-
-// const menu = `***** Choix *****
-//                     1)La plus grande note
-//                     2)La plus petite note
-//                     3)La moyenne
-                    
-//                     Faites votre choix : `;
-
-// choix= prompt(menu);
-
-// switch(choix) {
-//         case "1":
-//             note = "La plus grande note"
-//             break;
-//         case "2":
-//             note = "La plus petite note"
-//             break;
-//         case "3":
-//             sum = "La moyenne"
-//             break;
-//             default :
-//             choix_invalid ="Inconnu"
-//             break;
-// }
+// affichage = `Ma meilleure note est ${pgn}, ma note la plus basse est ${ppn}, la moyenne est de ${sum} `;
+// alert(affichage);
