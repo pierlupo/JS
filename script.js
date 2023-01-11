@@ -478,3 +478,83 @@ switch (cond) {
 //     //montantImposable *= nbrParts
 
 //     console.log(`Le montant de vos impôts est de `);
+
+
+//exercice 12:
+ 
+// let nbr_an = 0, hbts = 0;
+
+// while (hbts <= 120000){
+//     nbr_an += 1
+//     hbts = 96809 * Math.pow(1 + 0.0089, nbr_an);
+    
+// }
+// hbts = Math.round(hbts);
+// alert(`Au bout de ${nbr_an} ans, Tourcoing aura atteint 120000 habitants, nous serons alors en ${nbr_an + 2015}, il y aura ${hbts} habitants en plus `);
+
+//exercice 13:
+
+// let choix_nombre = 0, n = 0, sum = 0, affichage;
+// choix_nombre = Number(prompt("Veuillez entrer un nombre : "))
+
+// for(let i = 1; i <= n; i++){
+//     sum = choix_nombre + n
+    
+//    }
+
+
+// affichage = alert(`les sommes possibles de cet entier n sont : ${sum}`);
+
+
+//exercice 14:
+
+// let ppn, pgn, sum, affichage;
+// affichage = prompt("Veuillez entrer une note : ");
+// for(let i = affichage; i <= 3; i++){
+         
+//     affichage;
+
+//     }
+
+// if(i==1){
+
+//     pgn = Nbr_entrees;
+//     ppn = Nbr_entrees;
+
+// }
+
+// if(Nbr_entrees>pgn){
+
+//     pgn = Nbr_entrees
+// }
+
+
+// if(Nbr_entrees<ppn){
+
+//     ppn = Nbr_entrees
+
+// }
+
+// const menu = `***** Choix *****
+//                     1)La plus grande note
+//                     2)La plus petite note
+//                     3)La moyenne
+                    
+//                     Faites votre choix : `;
+
+// choix= prompt(menu);
+
+// switch(choix) {
+//         case "1":
+//             note = "La plus grande note"
+//             break;
+//         case "2":
+//             note = "La plus petite note"
+//             break;
+//         case "3":
+//             sum = "La moyenne"
+//             break;
+//             default :
+//             choix_invalid ="Inconnu"
+//             break;
+// }
