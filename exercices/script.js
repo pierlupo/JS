@@ -285,11 +285,13 @@ const len = motentrer.length;
 for (let i = 0; i < len / 2; i++) {
 
     if (motentrer[i] !== motentrer[len - 1 - i]) {
-         alert("C'est un  palindrome");
+         alert("Ce n'est pas un  palindrome");
     }
 }
- alert("Ce n'est pas un  palindrome");
+ alert("C'est un  palindrome");
             
-    
+//exercice9:
+
+
 
 
