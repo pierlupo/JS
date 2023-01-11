@@ -1,6 +1,6 @@
 //exercice 10:
 
-let message, choix, choix_boisson;
+let message, choix_boisson;
 
 choix_boisson = prompt("Veuillez choisir une boisson :") ;
 
