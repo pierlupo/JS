@@ -295,21 +295,49 @@ switch (cond) {
 //     }
 // }
 
-//exercice8 correction
+// //exercice8 correction
 
-let mot, reverse,message;
+// let mot, reverse,message;
 
-mot = prompt("Veuillez entrer un mot :");
+// mot = prompt("Veuillez entrer un mot :");
 
-reverse = mot.split('').reverse().join('');
+// reverse = mot.split('').reverse().join('');
 
-console.log(reverse);
+// console.log(reverse);
 
-if(mot!=reverse) {
-    message = "Ce mot n'est pas un palindrome"
-}else{
-    message = "ce mot est un palindrome"
-}
+// if(mot!=reverse) {
+//     message = "Ce mot n'est pas un palindrome"
+// }else{
+//     message = "ce mot est un palindrome"
+// }
 
-alert(message);
-console.log(message);
+// alert(message);
+// console.log(message);
+
+// //exercice 9:
+
+// let age = 0, anciennete = 0, salaire = 0, indemnite = 0; 
+
+// salaire = Number(prompt("Veuillez entrer votre dernier salaire : "));
+// anciennete = Number(prompt("Veuillez entrer votre ancienneté : "));
+// age = Number(prompt("Veuillez entrer votre âge : "));
+
+// if (anciennete >=1 &&  anciennete<=10) {
+//     indemnite = (salaire/2) * anciennete; 
+// }
+
+// if (anciennete > 10) {
+//     indemnite = salaire * anciennete;
+//     //indemnite = (salaire/2) * 10;
+//     //indemnite += (anciennete-10)*salaire
+// }
+
+// if (age >= 46 && age<=49) {
+//     //indemnite = salaire * anciennete;
+//     indemnite += salaire * 2;
+// } else if (age >= 50) {
+//     indemnite += salaire * 5;
+// }
+
+// alert(`Votre indemnité est de ${indemnite}$`)
+// console.log(`Votre indemnité est de ${indemnite}$`)

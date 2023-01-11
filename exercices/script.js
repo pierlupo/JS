@@ -24,4 +24,4 @@ switch (choix_boisson) {
 
 }
 
-message = alert(`Vous avez commandé ${choix_boisson}`);
+message = alert(`Votre commande : ${choix_boisson}`);
