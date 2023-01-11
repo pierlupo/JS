@@ -1,27 +1,15 @@
-//exercice 10:
 
-let message, choix_boisson;
+//exercice 12:
+ 
+let nbr_an = 0, hbts = 0;
 
-choix_boisson = prompt("Veuillez choisir une boisson :") ;
-
-switch (choix_boisson) {
-    case "eau":
-        message = "Vous avez commandé de l'eau "; 
-        break;
-    case "jus d'oranges":
-        message = "Vous avez commandé un jus d'oranges ";
-        break;
-    case "limonade":
-        message = "Vous avez commandé une limonade ";
-        break;
-    case  "café":
-        message = "Vous avez commandé du café ";
-        break;
-    case "Thé":
-       message = "Vous avez commandé du thé ";
-        break;
-    default:
-
+while (hbts <= 120000){
+    nbr_an += 1
+    hbts = 96809 * Math.pow(1 + 0.0089, nbr_an);
+    
 }
 
-message = alert(`Votre commande : ${choix_boisson}`);
+alert(`Au bout de ${nbr_an} ans, Tourcoing aura atteint 120000 habitants, nous serons alors en ${nbr_an + 2015}, il y aura ${hbts} habitants en plus `);
+
+
+

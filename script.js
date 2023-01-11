@@ -341,3 +341,140 @@ switch (cond) {
 
 // alert(`Votre indemnité est de ${indemnite}$`)
 // console.log(`Votre indemnité est de ${indemnite}$`)
+
+//exercice 10:
+
+// let message, choix_boisson;
+
+// choix_boisson = prompt("Veuillez choisir une boisson :") ;
+
+// switch (choix_boisson) {
+//     case "eau":
+//         message = "Vous avez commandé de l'eau "; 
+//         break;
+//     case "jus d'oranges":
+//         message = "Vous avez commandé un jus d'oranges ";
+//         break;
+//     case "limonade":
+//         message = "Vous avez commandé une limonade ";
+//         break;
+//     case  "café":
+//         message = "Vous avez commandé du café ";
+//         break;
+//     case "Thé":
+//        message = "Vous avez commandé du thé ";
+//         break;
+//     default:
+
+// }
+
+// message = alert(`Votre commande : ${choix_boisson}`);
+
+//il faut un affichage du menu
+
+//correction : 
+
+//exercice 10:
+// let choix, boisson, affichage;
+
+// const menu = `***** Distributeur de Boisson *****
+//                     1) Eau
+//                     2) jus d'oranges
+//                     3) Limonade
+//                     4) Café
+//                     5) Thé
+                    
+//                     Faites votre choix : `;
+
+// choix= prompt(menu);
+
+
+// switch(choix) {
+//     case "1":
+//         boisson = "Eau"
+//         break;
+//     case "2":
+//         boisson = "jus d'oranges"
+//         break;
+//     case "3":
+//         boisson = "Limonade"
+//         break;
+//     case "4":
+//         boisson = "Café"
+//         break;
+//     case "5":
+//         boisson = "Thé"
+//         break;
+//     default :
+//         boisson ="Inconnu"
+//         break;
+// }
+
+// if (boisson != "Inconnu"){
+//     affichage = `Voici votre ${boisson}`;
+// }else {
+//     affichage = "Choix invalide";
+// }
+
+// alert(affichage);
+// console.log(affichage);
+
+//exercice 12:
+ 
+// let nbr_an = 0, hbts = 0;
+
+// while (hbts <= 120000){
+//     nbr_an += 1
+//     hbts = 96809 * Math.pow(1 + 0.0089, nbr_an);
+    
+// }
+
+// alert(`Au bout de ${nbr_an} ans, Tourcoing aura atteint 120000 habitants, nous serons alors en ${nbr_an + 2015}, il y aura ${hbts} habitants en plus `);
+
+// exercice 11:
+// let revenus = 0,
+//     nbrAdulte =0, 
+//     nbrEnfant = 0,
+//     nbrParts = 0,
+//     revenuImposable = 0,
+//     montantImposable = 0,
+//     affichage;
+
+// revenus = Number(prompt("Veuillez saisir le montant total des revenus du foyer : "));
+// nbrAdulte = Number(prompt("Veuillez saisir le nombre d'adulte(s) : "));
+// nbrEnfant = Number(prompt("Veuillez saisir le nombre d'enfant(s) : "));
+
+// //calcul du nombre de parts :
+
+// if (nbrEnfant <= 2) {
+
+//     nbrParts =  nbrAdulte + (nbrEnfant * 0.5)
+// }else{
+//     nbrParts = nbrAdulte + nbrEnfant - 1 
+// }
+
+// //la même chose en ternaire: condition ? true : false
+// //nbr_Parts = nbr_enfant <= 2  ?  nbr_adulte + nbr_enfant * 0.5 : nbr_adulte + nbr_enfant - 1 ;
+
+// revenuImposable = revenus / nbrParts;
+
+// switch(true) {
+//             case revenuImposable > 10777 && revenuImposable < 27479:
+//                 montantImposable = Math.round((revenuImposable - 10777) * 0.11)
+//                 break;
+//             case revenuImposable >= 27479 && revenuImposable < 78570:
+//                 montantImposable = Math.round((revenuImposable - 27479) * 0.3 + (27478 - 10778) * 0.11);
+//                 break;
+//             case revenuImposable >= 78571 && revenuImposable < 168994:
+//                 montantImposable = Math.round((revenuImposable - 78571) * 0.41 + (78570 - 27479) * 0.3 + (27478 - 10778) * 0.11 );
+//                 break;
+//             case revenuImposable >= 168994:
+//                 montantImposable = Math.round((revenuImposable - 168994) * 0.45 + (168994 - 78571) * 0.41 + (78570 - 27479) * 0.3 + (27478 - 10778) * 0.11 );
+//                 break;
+//     }
+
+//     montantImposable = montantImposable * nbrParts;
+
+//     //montantImposable *= nbrParts
+
+//     console.log(`Le montant de vos impôts est de `);
