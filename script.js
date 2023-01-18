@@ -131,7 +131,7 @@
 
 //Les structures conditionnelles:
 
-console.log("Les Structures Conditionnelles");
+// console.log("Les Structures Conditionnelles");
 
 //Avec plusieurs vérifications:
 // let compte  = 3000;
@@ -144,24 +144,24 @@ console.log("Les Structures Conditionnelles");
 
 //Avec plusieurs instructions évitant les vérif inutiles:
 
-let compte  = 3000;
+// let compte  = 3000;
 
-if(compte>0){
-    console.log("compte créditeur");
-    console.log(`Vous avez ${compte} euros`);
-}else{
-    console.log("compte débiteur ou null");   
-    console.log(`Vous allez payer des agios;  vous avez ${compte} euros`);
-}
+// if(compte>0){
+//     console.log("compte créditeur");
+//     console.log(`Vous avez ${compte} euros`);
+// }else{
+//     console.log("compte débiteur ou null");   
+//     console.log(`Vous allez payer des agios;  vous avez ${compte} euros`);
+// }
 
-//Avec un booléen:
+// //Avec un booléen:
 
-let crediteur = (compte>0)
+// let crediteur = (compte>0)
 
-if (crediteur)
-console.log("compte créditeur(avec un booléen)");
-else
-console.log("compte débiteur(avec un booléen)");
+// if (crediteur)
+// console.log("compte créditeur(avec un booléen)");
+// else
+// console.log("compte débiteur(avec un booléen)");
 
 //Avec une récupération de saisie utililsateur:
 
@@ -184,33 +184,33 @@ console.log("compte débiteur(avec un booléen)");
 //Switch:
 
 
-const civilite = "rien";
-switch (civilite) {
-    case 'Mr.':
-        console.log("Bonjour Monsieur");
-        break;
-    case 'Mme':
-        console.log("Bonjour Madame");
-        break;
-    default:
-        console.log("Bonjour Mademoiselle");
-        break;
-}
+// const civilite = "rien";
+// switch (civilite) {
+//     case 'Mr.':
+//         console.log("Bonjour Monsieur");
+//         break;
+//     case 'Mme':
+//         console.log("Bonjour Madame");
+//         break;
+//     default:
+//         console.log("Bonjour Mademoiselle");
+//         break;
+// }
 
-const cond = "autre";
-switch (cond) {
-    case 'Oranges':
-        console.log("Les oranges sont à 2.99€/kg");
-        break;
-    case 'Mangues':
-    case 'Papayes':
-        console.log("Les Mangues et les Papayes sont à 9.99€/kg");
-        break;
-    default:
-        console.log(`Désole, nous sommes à cour de ${cond}`);
-        break;
+// const cond = "autre";
+// switch (cond) {
+//     case 'Oranges':
+//         console.log("Les oranges sont à 2.99€/kg");
+//         break;
+//     case 'Mangues':
+//     case 'Papayes':
+//         console.log("Les Mangues et les Papayes sont à 9.99€/kg");
+//         break;
+//     default:
+//         console.log(`Désole, nous sommes à cour de ${cond}`);
+//         break;
 
-}
+// }
 
 //Switch avec range de valeur
 
@@ -534,3 +534,44 @@ switch (cond) {
 
 // affichage = `Ma meilleure note est ${pgn}, ma note la plus basse est ${ppn}, la moyenne est de ${sum} `;
 // alert(affichage);
+
+//exercice 13:
+
+// let n = 0, som = 0, affichage, choix;
+
+// choix = Number(prompt("Veuillez entrer un nombre : "))
+
+// for(let i = 0; i <= choix; i++){
+
+//     som = som + i
+
+//     }
+
+
+// Number(alert(`les sommes possibles de cet entier n sont : ${som}`));
+//correction exo13 :
+// let nombre = 0;
+// let affichage = `liste d'entiers chaînés`;
+
+// nombre = Number(prompt("Veuillez saisir un chiffre / nombre : "));
+
+// for(let i = 1; i <= nombre/2 + 1; i++){
+//         let somme = i;
+//         let chaine =" "+nombre+ " = "+ i + " ";
+//         for(let j = i+1;j <= nombre/2 + 1; j++) {
+//             somme += j;
+//         chaine +=  " + "+ j;
+//         if(somme == nombre) {
+//             affichage += `${chaine}`;
+//             break;
+//         }else if(somme > nombre){
+//             break;
+            
+//         }    
+//     }
+// }
+
+// console.log(affichage);
+//améliorer cet affichage un jour quand tu as le temps
+
+//
