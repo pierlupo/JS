@@ -1,0 +1,112 @@
+/* **********Reset********** */
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+
+* {
+margin: 0;
+padding: 0;
+
+}
+
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+  }
+
+
+body {
+    line-height: 1.5;
+  }
+
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+
+/*#root, #__next {
+    isolation: isolate;
+  } */
+
+/* **********Fin Reset********** */
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: roboto;
+background-color: rgba(128, 128, 128, 0.774);
+}
+
+h1{
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+
+#calculatrice{
+    background-color:rgba(0, 0, 0, 0.712);
+    display: flex;
+    flex-direction: column;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 0 5px rgba(0, 0, 0, 0.863);
+}
+
+/*body{
+    background-color: white;
+}*/
+
+input[type="button"]{
+    width: 100%;
+    margin: 2px;
+}
+
+table{
+    border: 2px solid black;
+    padding: 4px;
+}
+
+textarea{
+	text-align: right;
+    background-color: rgba(0, 195, 255, 0.63);
+    border-radius: 5px;
+}
+
+.btn {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgba(255, 255, 255, 0.89);
+    background-color: rgba(128, 128, 128, 0.884);
+    cursor: pointer;
+    box-shadow: 0 5px 0 5px rgba(0, 0, 0, 0.863);
+    font-size:20px;
+}
+
+button:active{
+    box-shadow: 0 1px;
+    transform: translateY(2px);
+}
+
+.btn_red {
+    background-color: rgba(255, 0, 0, 0.658);
+}
