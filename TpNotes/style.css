@@ -46,6 +46,7 @@ p, h1, h2, h3, h4, h5, h6 {
   } */
 
 /* **********Fin Reset********** */
+
 h1{
     font-weight: 400;
 }
@@ -53,6 +54,15 @@ h1{
 h2{
     font-weight: 300;
 }
+
+hr{
+    border-bottom: 1px;
+    margin: 0.5rem;
+}
+
+/* select{
+    width:500px;
+} */
 
 .container {
     background-color: rgba(0, 0, 0, 0.856);
@@ -78,10 +88,11 @@ h2{
     position: absolute;
     top: 80px;
     display: flex;
-    width: 80%;
+     width: 80%;
     justify-content: space-evenly;
-    margin-right: 120px;
+
 }
+
 .eleve{
     display: flex;
     flex-direction: column;
@@ -93,23 +104,17 @@ h2{
 
 .eleve_title{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 300px;
+    flex-direction: row;
 }
 
 .matiere_title{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 300px;
+    flex-direction: row;
 }
 
 .note_title{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 300px;
+    flex-direction: row;
 }
 
 .matiere{
@@ -121,7 +126,6 @@ h2{
     margin-top: 70px;
     
 }
-
 
 .note{
     display: flex;
@@ -146,7 +150,7 @@ button{
     font-size: 14px;
     cursor: pointer;
     margin-left: 14rem;
-    margin-top: 1.5rem;
+   /* margin-top: 1.5rem;*/
     /* display: flex;
     float: right; */
 }
@@ -160,12 +164,6 @@ button{
     display: flex;
     float: right;
     margin-right: 1.5rem;
-}
-
-
-hr{
-    border-bottom: 1px;
-    margin: 0.5rem;
 }
 
 .hidden{

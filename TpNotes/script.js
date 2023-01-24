@@ -90,13 +90,19 @@ Afficher = () => {
                     { 
                         prenom: "John", 
                         nom: "Smith", 
-                       
+                        notes: {
+                            'Français':[16,15,9,12],
+                            'Mathématiques':[15,12,14,8]
+                        }
                     }, 
 
                     { 
                         prenom: "Drew", 
                         nom: "Baxter", 
-                       
+                        notes : {
+                            'Français':[12,6,5,12],
+                            'Mathématiques':[13,8,10,8]
+                        }
                             
                         } 
                     
@@ -106,9 +112,9 @@ Afficher = () => {
                 
                 const btn = document.getElementById('valider0');
                 let mySelect = document.getElementById('select_elev');
-                
+                //let mySelectMat = document.getElementById('mat_select_0');
                 console.log(mySelect.innerHTML);
-                
+                //console.log(mySelectMat.innerHTML);
                 // for(let i = 0; i<etudiants.length; i++){
                     //         console.log(etudiants[i].prenom +" "+ etudiants[i].nom)
                     
@@ -123,11 +129,20 @@ Afficher = () => {
                     }
                     refreshEleveSelect();
 
+                    // const refreshMatSelect = () => {
+                    //     mySelectMat.innerHTML =`<option value="0">Sélectionnez une matière</option>`;
+                    //     matieres.forEach(eleve => {
+                    //         //console.log(eleve.nom);
+                    //         mySelectMat.innerHTML += `<option value ="${etudiants.indexOf(eleve)+1}"> ${eleve.matiere} </option>`;
+                    //     });
+                    // }
+                    // refreshMatSelect();
+
                     btn.addEventListener("click", () => {
 
                         let newName = document.getElementById("ajoutNom").value;
                         let newPrenom = document.getElementById("ajoutPrenom").value;
-                        let newMat = document.getElementById("ajoutMatiere").value;
+                       // let newMat = document.getElementById("ajoutMatiere").value;
                         etudiants.push({
                             nom : newName,
                             prenom : newPrenom,
